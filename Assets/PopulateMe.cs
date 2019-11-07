@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class PopulateMe : MonoBehaviour
 {
     
-    public int ammount;
+    //list of cards that have been spawned
     [SerializeField]
     private List<BasicCardScript> activeCards = new List<BasicCardScript>();
+    //list of cards that need to be spawned.
     public List<CardScriptableObject> myHand = new List<CardScriptableObject>();
 
 
@@ -30,8 +31,11 @@ public class PopulateMe : MonoBehaviour
         
         foreach (CardScriptableObject Card in myHand)
         {
+            //spawns the blank prefab card
             BasicCardScript tempCard = Instantiate(Card.myTemplate, transform);
+            //changes the image of the prefab to a card image
             tempCard.CardBack.sprite = Card.CardBase;
+            //changes the text component of the buttons
             tempCard.myButtons[0].GetComponentInChildren<Text>().text = Card.ability1.AbilityText;
             tempCard.myButtons[1].GetComponentInChildren<Text>().text = Card.ability2.AbilityText;
             activeCards.Add(tempCard);

@@ -325,7 +325,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3690c7d3bf03f1f4a9e9a15725fac453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammount: 0
   activeCards: []
   myHand: []
 --- !u!1 &963194225
@@ -589,9 +588,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3690c7d3bf03f1f4a9e9a15725fac453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammount: 3
   activeCards: []
   myHand:
   - {fileID: 11400000, guid: 81ad97537d6561342a0f4568c7f51c94, type: 2}
   - {fileID: 11400000, guid: 405ad86eb8c3ce64bbe88faba54ba7b2, type: 2}
-  - {fileID: 11400000, guid: f95b7d821bd4baa45b5a0068aa32df46, type: 2}
+  - {fileID: 11400000, guid: fc49d2654666eb54bb60fef7548da757, type: 2}

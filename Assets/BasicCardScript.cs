@@ -5,8 +5,12 @@ using UnityEngine.UI;
 
 public class BasicCardScript : MonoBehaviour
 {
-
+    //image for card back
+    //must be manually set
     public Image CardBack;
+
+    //reference to buttons
+    //must be manually set
     public Button[] myButtons;
 
 
